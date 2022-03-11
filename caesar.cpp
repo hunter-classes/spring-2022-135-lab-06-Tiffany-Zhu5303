@@ -25,7 +25,7 @@ char shiftChar(char c, int rshift){
     // std::cout << "after the shift, the value is " << asciiCode << std::endl;
     
     while(asciiCode > 90){
-      asciiCode -= 25;
+      asciiCode -= 26;
     }
     
   }else if(lower == true){
@@ -35,7 +35,7 @@ char shiftChar(char c, int rshift){
     // std::cout << "after the shift, the value is " << asciiCode << std::endl;
     
     while(asciiCode > 122){
-      asciiCode -= 25;
+      asciiCode -= 26;
     }
     
   }else{
