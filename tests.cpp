@@ -31,3 +31,14 @@ TEST_CASE("longer vigenere"){
   CHECK(encryptVigenere("Tiffany Zhu", "name") == "Girjnnk Duu");
   CHECK(encryptVigenere("I want to sleep ;-;", "please") == "X henl xd dpewt ;-;");
 }
+
+TEST_CASE("decrypt Caesar"){
+  CHECK(decryptCaesar("Drsc sc k bkxnyw coxdoxmo.", 10) == "This is a random sentence.");
+  CHECK(decryptCaesar("Jxyi yi jqaydw jee bedw -_-", 16) == "This is taking too long -_-");
+}
+
+TEST_CASE("decrypt Vigenere"){
+  CHECK(decryptVigenere("P fvqv nptmg", "hungry") == "I like pizza");
+  CHECK(decryptVigenere("Tghhxy mcdxivfy", "butter") == "Smooth likeeeee");
+}
+

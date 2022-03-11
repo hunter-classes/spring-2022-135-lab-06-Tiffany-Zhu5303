@@ -40,7 +40,36 @@ int main()
   std::cout << "Cipher text: " << encryptVigenere(text, key) << std::endl;
 
   //Task D
-  
+  text = "I'm so tireddddd~";
+  key = "sleep";
+  std::string decryptedC = decryptCaesar(encryptCaesar(text, shift), shift);
+  std::string decryptedV = decryptVigenere(encryptVigenere(text, key), key);
+
+  std::cout << "\n\nPlain text: " << text << std::endl;
+
+  std::cout << "\n== Caesar ==\nshift: " << shift << std::endl;
+  std::cout << "Cipher text: " << encryptCaesar(text, shift) << std::endl;
+  std::cout << "Decrypted: " << decryptedC << std::endl;
+
+  std::cout << "\n\n== Vigenere ==\nkeyword: " << key << std::endl;
+  std::cout << "Cipher text: " << encryptVigenere(text, key) << std::endl;
+  std::cout << "Decrypted: " << decryptedV << std::endl;
+
+  text = "Time to sleep :)";
+  key = "hardwork";
+  shift = 21;
+  decryptedC = decryptCaesar(encryptCaesar(text, shift), shift);
+  decryptedV = decryptVigenere(encryptVigenere(text, key), key);
+
+  std::cout << "\n\nPlain text: " << text << std::endl;
+
+  std::cout << "\n== Caesar ==\nshift: " << shift << std::endl;
+  std::cout << "Cipher text: " << encryptCaesar(text, shift) << std::endl;
+  std::cout << "Decrypted: " << decryptedC << std::endl;
+
+  std::cout << "\n\n== Vigenere ==\nkeyword: " << key << std::endl;
+  std::cout << "Cipher text: " << encryptVigenere(text, key) << std::endl;
+  std::cout << "Decrypted: " << decryptedV << std::endl;
   
   return 0;
 }
